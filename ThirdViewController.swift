@@ -59,7 +59,7 @@ class ThirdViewController: UIViewController {
         
         
         //PLAYER ONE
-        if playerOneShift <= 3 {
+        if playerOneShift <= 3 | playerOneShift >= 5 {
                 UIView.animate(withDuration: 1, animations: {
                 print("player one does not shift")
             })
