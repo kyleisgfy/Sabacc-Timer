@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B12B47221D888F8F003855CD /* SabaccIcon2.png */; };
 		B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995691D827B5500ADD3D2 /* AppDelegate.swift */; };
 		B149956C1D827B5500ADD3D2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956B1D827B5500ADD3D2 /* FirstViewController.swift */; };
 		B149956E1D827B5500ADD3D2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956D1D827B5500ADD3D2 /* SecondViewController.swift */; };
@@ -15,6 +16,10 @@
 		B14995761D827B5500ADD3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14995741D827B5500ADD3D2 /* LaunchScreen.storyboard */; };
 		B14995811D827B5500ADD3D2 /* Sabacc_NewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995801D827B5500ADD3D2 /* Sabacc_NewTests.swift */; };
 		B149958C1D827B5500ADD3D2 /* Sabacc_NewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149958B1D827B5500ADD3D2 /* Sabacc_NewUITests.swift */; };
+		B149959C1D83ACFF00ADD3D2 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149959B1D83ACFF00ADD3D2 /* PlayerManager.swift */; };
+		B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */; };
+		B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B14995A91D8630DA00ADD3D2 /* Players Icon1.png */; };
+		B14995AE1D8642B500ADD3D2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B12B47221D888F8F003855CD /* SabaccIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccIcon2.png; sourceTree = "<group>"; };
 		B14995661D827B5500ADD3D2 /* Sabacc New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sabacc New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14995691D827B5500ADD3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B149956B1D827B5500ADD3D2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		B14995871D827B5500ADD3D2 /* Sabacc NewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sabacc NewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B149958B1D827B5500ADD3D2 /* Sabacc_NewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sabacc_NewUITests.swift; sourceTree = "<group>"; };
 		B149958D1D827B5500ADD3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B149959B1D83ACFF00ADD3D2 /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabacc rotate.png"; sourceTree = "<group>"; };
+		B14995A91D8630DA00ADD3D2 /* Players Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players Icon1.png"; sourceTree = "<group>"; };
+		B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +112,15 @@
 				B14995691D827B5500ADD3D2 /* AppDelegate.swift */,
 				B149956B1D827B5500ADD3D2 /* FirstViewController.swift */,
 				B149956D1D827B5500ADD3D2 /* SecondViewController.swift */,
+				B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */,
+				B149959B1D83ACFF00ADD3D2 /* PlayerManager.swift */,
 				B149956F1D827B5500ADD3D2 /* Main.storyboard */,
 				B14995721D827B5500ADD3D2 /* Assets.xcassets */,
 				B14995741D827B5500ADD3D2 /* LaunchScreen.storyboard */,
 				B14995771D827B5500ADD3D2 /* Info.plist */,
+				B14995A91D8630DA00ADD3D2 /* Players Icon1.png */,
+				B12B47221D888F8F003855CD /* SabaccIcon2.png */,
+				B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */,
 			);
 			path = "Sabacc New";
 			sourceTree = "<group>";
@@ -191,18 +206,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kyle Schneider›‹";
 				TargetAttributes = {
 					B14995651D827B5500ADD3D2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F9JYE6GX59;
+						LastSwiftMigration = 0800;
 					};
 					B149957B1D827B5500ADD3D2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = B14995651D827B5500ADD3D2;
 					};
 					B14995861D827B5500ADD3D2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = B14995651D827B5500ADD3D2;
 					};
 				};
@@ -233,8 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14995761D827B5500ADD3D2 /* LaunchScreen.storyboard in Resources */,
+				B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */,
 				B14995731D827B5500ADD3D2 /* Assets.xcassets in Resources */,
 				B14995711D827B5500ADD3D2 /* Main.storyboard in Resources */,
+				B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */,
+				B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +283,8 @@
 			files = (
 				B149956E1D827B5500ADD3D2 /* SecondViewController.swift in Sources */,
 				B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */,
+				B149959C1D83ACFF00ADD3D2 /* PlayerManager.swift in Sources */,
+				B14995AE1D8642B500ADD3D2 /* ThirdViewController.swift in Sources */,
 				B149956C1D827B5500ADD3D2 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,8 +354,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -375,8 +401,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -395,6 +423,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -403,10 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sabacc New/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,10 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sabacc New/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -429,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-NewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sabacc New.app/Sabacc New";
 			};
 			name = Debug;
@@ -441,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-NewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sabacc New.app/Sabacc New";
 			};
 			name = Release;
@@ -452,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-NewUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Sabacc New";
 			};
 			name = Debug;
@@ -463,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-NewUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Sabacc New";
 			};
 			name = Release;
@@ -486,6 +527,7 @@
 				B14995921D827B5500ADD3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B14995931D827B5500ADD3D2 /* Build configuration list for PBXNativeTarget "Sabacc NewTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +536,7 @@
 				B14995951D827B5500ADD3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B14995961D827B5500ADD3D2 /* Build configuration list for PBXNativeTarget "Sabacc NewUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +545,7 @@
 				B14995981D827B5500ADD3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
