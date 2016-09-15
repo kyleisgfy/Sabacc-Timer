@@ -16,7 +16,6 @@ class FirstViewController:
     UITableViewDataSource {
 
     @IBOutlet var txtName: UITextField!
-    @IBOutlet var txtComment: UITextField!
     @IBOutlet var tblNames: UITableView!
     @IBOutlet weak var addName: UIButton!
     
@@ -51,17 +50,15 @@ class FirstViewController:
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "test")
         cell.textLabel!.text = playerMgr.players[(indexPath as NSIndexPath).row].name
-        cell.detailTextLabel!.text = playerMgr.players[(indexPath as NSIndexPath).row].comment
-        print("text field clicked")
+        print("player added")
         
         return cell
     }
-    //Events
+    //function to add player after button is pressed
     @IBAction func btnAddName_Click(_ sender: UIButton){
-        playerMgr.addPlayer(txtName.text!, comment: txtComment.text!)
-        self.view.endEditing(true)
+        playerMgr.addPlayer(txtName.text!)
+       // self.view.endEditing(true)
         txtName.text = ""
-        txtComment.text = ""
         tblNames.reloadData()
     }
     

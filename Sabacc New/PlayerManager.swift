@@ -14,8 +14,10 @@ var playerMgr: PlayerManager = PlayerManager ()
 
 
 struct structureOfPlayer{
-    var name = "Un-Named"
-    var comment = "Some-Comment"
+    var name = "String"
+    var shift =  false
+    var modifier = false
+    var playersCurrentDiceRoll:Int = 0
 }
 
 
@@ -23,8 +25,12 @@ class PlayerManager: NSObject {
     
     var players = [structureOfPlayer] ()
     
-    func addPlayer (_ name: String, comment: String){
-        players.append(structureOfPlayer(name: name, comment: comment))
+    func addPlayer (_ name: String){
+        players.append(structureOfPlayer(
+            name: name,
+            shift: false,
+            modifier: false,
+            playersCurrentDiceRoll: 0))
     }
 
 }
