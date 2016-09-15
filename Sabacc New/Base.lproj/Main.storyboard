@@ -176,19 +176,14 @@
                     <tabBarItem key="tabBarItem" title="Shift" id="FA3-VX-Cwb"/>
                     <navigationItem key="navigationItem" id="ixu-cl-qOs"/>
                     <connections>
-                        <outlet property="labelFour" destination="liX-T0-PgO" id="0Z5-QZ-rF7"/>
+                        <outlet property="labelFour" destination="liX-T0-PgO" id="OmC-wS-GBS"/>
                         <outlet property="labelFourModifier" destination="rfW-hu-RGj" id="NgX-wn-cEw"/>
-                        <outlet property="labelOne" destination="a9D-nW-BYi" id="hNZ-OS-alh"/>
+                        <outlet property="labelOne" destination="a9D-nW-BYi" id="G00-Ep-36M"/>
                         <outlet property="labelOneModifier" destination="iDq-YR-CwE" id="gep-as-i8J"/>
-                        <outlet property="labelThree" destination="fR9-kU-xlJ" id="WT8-yG-xwZ"/>
+                        <outlet property="labelThree" destination="fR9-kU-xlJ" id="fom-QK-f2u"/>
                         <outlet property="labelThreeModifier" destination="kq9-aW-TYy" id="A25-nu-Zne"/>
-                        <outlet property="labelTwo" destination="So6-B0-yIw" id="Ifl-DN-NbT"/>
+                        <outlet property="labelTwo" destination="So6-B0-yIw" id="vC0-VL-lgp"/>
                         <outlet property="labelTwoModifier" destination="toD-eq-nkV" id="b1G-ki-HKe"/>
-                        <outlet property="playerFour" destination="liX-T0-PgO" id="39i-40-ifM"/>
-                        <outlet property="playerOne" destination="a9D-nW-BYi" id="qAe-Xk-OcM"/>
-                        <outlet property="playerOneModifier" destination="iDq-YR-CwE" id="48H-nS-vjW"/>
-                        <outlet property="playerThree" destination="fR9-kU-xlJ" id="iYY-iq-XFD"/>
-                        <outlet property="playerTwo" destination="So6-B0-yIw" id="I4l-iG-FuE"/>
                         <outlet property="view" destination="0rb-kn-QdV" id="qW8-Ai-jfO"/>
                     </connections>
                 </viewController>
