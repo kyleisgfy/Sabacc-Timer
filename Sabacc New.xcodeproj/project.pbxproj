@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1192A881D8D1F140056B186 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1192A871D8D1F140056B186 /* GameController.swift */; };
 		B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B12B47221D888F8F003855CD /* SabaccIcon2.png */; };
 		B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995691D827B5500ADD3D2 /* AppDelegate.swift */; };
 		B149956C1D827B5500ADD3D2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956B1D827B5500ADD3D2 /* FirstViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1192A871D8D1F140056B186 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		B12B47221D888F8F003855CD /* SabaccIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccIcon2.png; sourceTree = "<group>"; };
 		B14995661D827B5500ADD3D2 /* Sabacc New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sabacc New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14995691D827B5500ADD3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B149956D1D827B5500ADD3D2 /* SecondViewController.swift */,
 				B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */,
 				B149959B1D83ACFF00ADD3D2 /* PlayerManager.swift */,
+				B1192A871D8D1F140056B186 /* GameController.swift */,
 				B149956F1D827B5500ADD3D2 /* Main.storyboard */,
 				B14995721D827B5500ADD3D2 /* Assets.xcassets */,
 				B14995741D827B5500ADD3D2 /* LaunchScreen.storyboard */,
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B149956E1D827B5500ADD3D2 /* SecondViewController.swift in Sources */,
+				B1192A881D8D1F140056B186 /* GameController.swift in Sources */,
 				B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */,
 				B149959C1D83ACFF00ADD3D2 /* PlayerManager.swift in Sources */,
 				B14995AE1D8642B500ADD3D2 /* ThirdViewController.swift in Sources */,

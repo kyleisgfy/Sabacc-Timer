@@ -20,11 +20,17 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var labelTwo: UILabel!
     @IBOutlet weak var labelThree: UILabel!
     @IBOutlet weak var labelFour: UILabel!
+    @IBOutlet weak var labelFive: UILabel!
+    @IBOutlet weak var labelSix: UILabel!
+    var labelArray : [UILabel] = []
+    
     
     @IBOutlet weak var labelOneModifier: UILabel!
     @IBOutlet weak var labelTwoModifier: UILabel!
     @IBOutlet weak var labelThreeModifier: UILabel!
     @IBOutlet weak var labelFourModifier: UILabel!
+    @IBOutlet weak var labelFiveModifier: UILabel!
+    @IBOutlet weak var labelSixModifier: UILabel!
 
     //View Did Load
     
@@ -43,14 +49,29 @@ class ThirdViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         print ("view3DidLayoutSubviews")
         super.viewDidLayoutSubviews()
-        self.labelOne.alpha = 0
-        self.labelTwo.alpha = 0
-        self.labelThree.alpha = 0
-        self.labelFour.alpha = 0
-        self.labelOneModifier.alpha = 0
-        self.labelTwoModifier.alpha = 0
-        self.labelThreeModifier.alpha = 0
-        self.labelFourModifier.alpha = 0
+//        self.labelOne.alpha = 0
+//        self.labelTwo.alpha = 0
+//        self.labelThree.alpha = 0
+//        self.labelFour.alpha = 0
+//        self.labelOneModifier.alpha = 0
+//        self.labelTwoModifier.alpha = 0
+//        self.labelThreeModifier.alpha = 0
+//        self.labelFourModifier.alpha = 0
+        
+        labelArray = [labelOne, labelTwo, labelThree, labelFour, labelFive, labelSix]
+        for index in 1...(playerMgr.players.count - 1){
+            print("Assign label \(index) to name \(playerMgr.players[index].name)")
+            self.labelArray[index].text = "\(playerMgr.players[index].name)"
+            if playerMgr.players[index].shift == false {
+                self.labelArray[index].backgroundColor = UIColor.green
+            } else if playerMgr.players[index].modifier == true{
+                self.labelArray[index].backgroundColor = UIColor.red
+            } else {
+                self.labelArray[index].backgroundColor = UIColor.yellow
+            }
+            }
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool){
