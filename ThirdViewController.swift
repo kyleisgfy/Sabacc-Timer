@@ -52,7 +52,7 @@ class ThirdViewController: UIViewController {
         
         for index in 0...(playerMgr.players.count - 1) {
             print("Set label \(index) alpha to 0.")
-            //self.labelArray[index].alpha = 0
+            self.labelArray[index].alpha = 0
             print("Assign label \(index) to name \(playerMgr.players[index].name)")
             self.labelArray[index].text = "\(playerMgr.players[index].name)"
         }
@@ -63,7 +63,7 @@ class ThirdViewController: UIViewController {
 //                                                  --Red if the player SHIFTS TWO CARDS--
 
         
-        for index in 0...(playerMgr.players.count - 1){
+        for index in 0...(playerMgr.players.count - 1) {
             if playerMgr.players[index].shift == false {
                 self.labelArray[index].backgroundColor = UIColor.green
             } else if playerMgr.players[index].modifier == true {
@@ -79,9 +79,28 @@ class ThirdViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool){
         print("view3DidLayoutSubviews")
         super.viewDidAppear(animated)
-    }
-    
+//      Animation to fade in labels
+        
+        UIView.animateWithDuration( 2, animations:  {
+        for index in 0...(playerMgr.players.count - 1) {
+            if playerMgr.players[index].shift == false {
+                self.labelArray[index].alpha = 50
+            } else if playerMgr.players[index].modifier == true {
+                self.labelArray[index].alpha = 100
+            } else {
+                self.labelArray[index].alpha = 70
+                }
+            }
+        }
+
 }
+}
+
+
+
+
+    
+
 
 
 
