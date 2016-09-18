@@ -38,7 +38,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-Uw-TG6">
-                                <frame key="frameInset" minX="345" minY="49" width="30" height="29"/>
+                                <frame key="frameInset" minX="338" minY="49" width="30" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="+"/>
@@ -49,7 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.8515087366104126" green="0.86194688081741333" blue="0.88001900911331177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Players" image="Players Icon1.png" selectedImage="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="first" selectedImage="second" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="addName" destination="BoF-Uw-TG6" id="a4A-uj-bfu"/>
                         <outlet property="tblNames" destination="xEs-2r-x6e" id="PF3-Oo-pTi"/>
@@ -87,7 +87,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shift Timer" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Shift Timer" image="first" selectedImage="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="spinning" destination="kNc-Vd-lMf" id="sld-wS-MrE"/>
                         <outlet property="testButton" destination="cUb-Pn-7Oc" id="9gU-rL-UuG"/>
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="0.0"/>
+            <point key="canvasLocation" x="1445.5999999999999" y="-0.44977511244377816"/>
         </scene>
         <!--ThirdViewController-->
         <scene sceneID="y7X-Bu-MPe">
@@ -109,70 +109,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bEv-JX-YGd">
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UuB-7E-Qcy">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZS-uG-edo">
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2k-BX-ZNN">
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-9m-t1h">
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-XH-jWw">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYs-qk-Frt">
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-tm-UYf">
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player six" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w42-VK-aT5">
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
-                                    </stackView>
-                                </subviews>
-                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
-                                <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
-                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-sh-fPx" userLabel="stackViewMain"/>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.59890545689999997" green="0.59890545689999997" blue="0.59890545689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bEv-JX-YGd" firstAttribute="leading" secondItem="0rb-kn-QdV" secondAttribute="leadingMargin" constant="109" id="8ST-lE-tbF"/>
-                            <constraint firstItem="bEv-JX-YGd" firstAttribute="top" secondItem="mSv-ZE-7Un" secondAttribute="bottom" constant="137" id="9Fi-YZ-ktr"/>
-                            <constraint firstItem="RP9-7S-bne" firstAttribute="top" secondItem="bEv-JX-YGd" secondAttribute="bottom" constant="231" id="Cgr-Xv-wDb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bEv-JX-YGd" secondAttribute="trailing" constant="109" id="LE5-TV-w11"/>
+                            <constraint firstItem="jcg-sh-fPx" firstAttribute="top" secondItem="mSv-ZE-7Un" secondAttribute="bottom" id="0Zw-S5-oHF"/>
+                            <constraint firstItem="jcg-sh-fPx" firstAttribute="leading" secondItem="0rb-kn-QdV" secondAttribute="leadingMargin" constant="10" id="MTg-uF-TTa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jcg-sh-fPx" secondAttribute="trailing" constant="10" id="fqb-a7-lby"/>
+                            <constraint firstItem="RP9-7S-bne" firstAttribute="top" secondItem="jcg-sh-fPx" secondAttribute="bottom" id="hCT-rH-dYQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shift" id="FA3-VX-Cwb"/>
+                    <tabBarItem key="tabBarItem" title="Shift" image="first" selectedImage="second" id="FA3-VX-Cwb"/>
                     <navigationItem key="navigationItem" id="ixu-cl-qOs"/>
                     <connections>
-                        <outlet property="labelFive" destination="wRv-9m-t1h" id="aAH-vv-6Yk"/>
-                        <outlet property="labelFour" destination="jCW-tm-UYf" id="heq-f3-yPA"/>
-                        <outlet property="labelOne" destination="JZS-uG-edo" id="iem-nI-iGD"/>
-                        <outlet property="labelSix" destination="w42-VK-aT5" id="Aun-fN-8Pr"/>
-                        <outlet property="labelThree" destination="o2k-BX-ZNN" id="shA-SL-Evc"/>
-                        <outlet property="labelTwo" destination="DYs-qk-Frt" id="I1n-k4-Sqh"/>
+                        <outlet property="stackViewMain" destination="jcg-sh-fPx" id="SdE-Sn-dkm"/>
                         <outlet property="view" destination="0rb-kn-QdV" id="qW8-Ai-jfO"/>
                     </connections>
                 </viewController>
@@ -202,7 +152,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Players Icon1.png" width="75" height="45"/>
         <image name="Sabacc rotate.png" width="3017" height="3456"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
