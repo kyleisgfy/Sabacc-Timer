@@ -38,7 +38,7 @@ class SecondViewController:
         for index in 1...10 {
             print("image \(index).png put into array")
             let imageName = "\(index).png"
-            imageList.append (UIImage (named: imageName))
+            imageList.append (UIImage (named: imageName)!)
             
         }
 
@@ -46,7 +46,7 @@ class SecondViewController:
     }
     
     
-    var imageList: Array! = []
+    var imageList: Array<AnyObject> = []
     
     func startAnimation () -> Void {
         print("Animation has started")
