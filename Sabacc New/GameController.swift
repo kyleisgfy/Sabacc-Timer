@@ -16,6 +16,13 @@ class GameController: NSObject {
 ///       ///      ///     Functions      ///      ///     ///
 
 
+/// Game Style Discriptions ///
+//    Uses the picker view (gameStyle) and displays the rules for gameplay in the text view (gameStyleDiscription)
+    
+    
+    
+    
+    
 /// Dice Rolling Simulator ///
 //    rolls dice for each player and saves the value in player structure.
 //    additionaly, sets the player's current shift and modifier vallue to true or false based on said roll.

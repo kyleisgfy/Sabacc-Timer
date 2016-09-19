@@ -72,16 +72,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sabacc rotate.png" translatesAutoresizingMaskIntoConstraints="NO" id="kNc-Vd-lMf">
-                                <frame key="frameInset" minX="89" minY="120" width="197" height="222"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUb-Pn-7Oc">
-                                <frame key="frameInset" minX="164" minY="533" width="46" height="30"/>
+                                <frame key="frameInset" minY="580" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="testButtonFunc_Click:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5YO-BU-Zsy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownOne">
+                                <frame key="frameInset" minX="81" minY="75" width="213" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-Ke-3fq">
+                                <frame key="frameInset" minX="134" minY="542" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="startAnimationButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="585-iF-tew"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,7 +97,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Shift Timer" image="first" selectedImage="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="spinning" destination="kNc-Vd-lMf" id="sld-wS-MrE"/>
+                        <outlet property="countDownOne" destination="ciU-mJ-NFs" id="Y2s-jG-Q1o"/>
+                        <outlet property="startAnimationButton" destination="VHt-Ke-3fq" id="ULp-aD-fYo"/>
                         <outlet property="testButton" destination="cUb-Pn-7Oc" id="9gU-rL-UuG"/>
                     </connections>
                 </viewController>
@@ -152,7 +161,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Sabacc rotate.png" width="3017" height="3456"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

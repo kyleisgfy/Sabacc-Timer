@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1192A881D8D1F140056B186 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1192A871D8D1F140056B186 /* GameController.swift */; };
+		B1192AC41D8F6C980056B186 /* timerIcons in Resources */ = {isa = PBXBuildFile; fileRef = B1192AC31D8F6C980056B186 /* timerIcons */; };
 		B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B12B47221D888F8F003855CD /* SabaccIcon2.png */; };
 		B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995691D827B5500ADD3D2 /* AppDelegate.swift */; };
 		B149956C1D827B5500ADD3D2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956B1D827B5500ADD3D2 /* FirstViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		B1192A871D8D1F140056B186 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		B1192AC31D8F6C980056B186 /* timerIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = timerIcons; sourceTree = "<group>"; };
 		B12B47221D888F8F003855CD /* SabaccIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccIcon2.png; sourceTree = "<group>"; };
 		B14995661D827B5500ADD3D2 /* Sabacc New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sabacc New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14995691D827B5500ADD3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B14995A91D8630DA00ADD3D2 /* Players Icon1.png */,
 				B12B47221D888F8F003855CD /* SabaccIcon2.png */,
 				B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */,
+				B1192AC31D8F6C980056B186 /* timerIcons */,
 			);
 			path = "Sabacc New";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				B14995731D827B5500ADD3D2 /* Assets.xcassets in Resources */,
 				B14995711D827B5500ADD3D2 /* Main.storyboard in Resources */,
 				B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */,
+				B1192AC41D8F6C980056B186 /* timerIcons in Resources */,
 				B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,11 +9,52 @@
 import UIKit
 
 class SecondViewController:
-    UIViewController {
+      UIViewController
+{
+    
 
 //      ///Outlets and Buttons
-    @IBOutlet weak var spinning: UIImageView!
+    @IBOutlet weak var countDownOne: UIImageView!
+//    @IBOutlet weak var gameStyle: UIPickerView!
+    @IBOutlet weak var startAnimationButton: UIButton!
+    
+    @IBOutlet weak var testButton: UIButton!
+    @IBAction func testButtonFunc_Click(_ sender:UIButton){
+        
+        
+        
+        //      ///Simulated Timer Fired
+        
+        print("Shift Button Pressed")
+        gameCont.diceIsRolled()
+        
+        //      ///Timer Running
+        
+        gameCont.randomTimeIntervalGenerator ()
+    }
+    
+    @IBAction func startAnimationButton (_ sender:UIButton){
+        for index in 1...5 {
+            print("image \(index).png put into array")
+            let imageName = "timerIcons.\(index).png"
+            imageList.append (UIImage (named: imageName))
+            imageList .addObject(imageName)
+        }
 
+        startAnimation()
+    }
+    
+    
+    var imageList: Array! = []
+    
+    func startAnimation () -> Void {
+        
+        countDownOne.animationImages = imageList as? [UIImage]
+        countDownOne.startAnimating()
+    }
+
+    
+    
 // View Did Load
     
     override func viewDidLoad() {
@@ -40,29 +81,34 @@ class SecondViewController:
 
 //      ///Rotation Graphic
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.spinning.transform =
-                CGAffineTransform(rotationAngle: 90)
-            }) { (_) -> Void in
-                return ()
-        }
+       
     
-    }
     
-    @IBOutlet weak var testButton: UIButton!
-    @IBAction func testButtonFunc_Click(_ sender:UIButton){
-        
-        
+    
 
-//      ///Simulated Timer Fired
         
-        print("Shift Button Pressed")
-        gameCont.diceIsRolled()
-    
-//      ///Timer Running
-        
-        gameCont.randomTimeIntervalGenerator ()
     }
+//    @IBOutlet weak var gameStyleDiscription: UITextView!
+//    var pickerViewDataSource = ["Corisant Rules", "Smuggler's Rules, Jabba's Rules"]
+//    let gameStyle.dataSource:UIPickerView = pickerViewDataSource
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
     
 }
     

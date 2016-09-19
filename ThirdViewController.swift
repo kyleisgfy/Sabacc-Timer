@@ -82,6 +82,7 @@ class ThirdViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         print("view3DidLayoutSubviews")
         super.viewDidAppear(animated)
+
 //      Animation to fade in labels
 //      Fades labels in to 50% alpha if they are green and player does not shift.
 //      Fades labels in to 70% alpha if they are yellow and player shifts one card.
