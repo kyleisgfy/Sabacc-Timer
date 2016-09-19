@@ -26,6 +26,7 @@ class SecondViewController:
         //      ///Simulated Timer Fired
         
         print("Shift Button Pressed")
+        countDownOne.stopAnimating()
         gameCont.diceIsRolled()
         
         //      ///Timer Running
