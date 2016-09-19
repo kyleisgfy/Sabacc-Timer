@@ -93,7 +93,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.35157764060000002" green="0.52108555329999995" blue="0.60349197460000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shift Timer" image="first" selectedImage="second" id="cPa-gy-q4n"/>
                     <connections>
