@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B1192A881D8D1F140056B186 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1192A871D8D1F140056B186 /* GameController.swift */; };
-		B1192AC41D8F6C980056B186 /* timerIcons in Resources */ = {isa = PBXBuildFile; fileRef = B1192AC31D8F6C980056B186 /* timerIcons */; };
 		B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B12B47221D888F8F003855CD /* SabaccIcon2.png */; };
 		B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995691D827B5500ADD3D2 /* AppDelegate.swift */; };
 		B149956C1D827B5500ADD3D2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956B1D827B5500ADD3D2 /* FirstViewController.swift */; };
@@ -22,6 +21,16 @@
 		B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */; };
 		B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B14995A91D8630DA00ADD3D2 /* Players Icon1.png */; };
 		B14995AE1D8642B500ADD3D2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */; };
+		B1F8493A1D8FD0B70000E54E /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849301D8FD0B70000E54E /* 6.png */; };
+		B1F8493B1D8FD0B70000E54E /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849311D8FD0B70000E54E /* 7.png */; };
+		B1F8493C1D8FD0B70000E54E /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849321D8FD0B70000E54E /* 8.png */; };
+		B1F8493D1D8FD0B70000E54E /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849331D8FD0B70000E54E /* 9.png */; };
+		B1F8493E1D8FD0B70000E54E /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849341D8FD0B70000E54E /* 10.png */; };
+		B1F8493F1D8FD0B70000E54E /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849351D8FD0B70000E54E /* 5.png */; };
+		B1F849401D8FD0B70000E54E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849361D8FD0B70000E54E /* 4.png */; };
+		B1F849411D8FD0B70000E54E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849371D8FD0B70000E54E /* 3.png */; };
+		B1F849421D8FD0B70000E54E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849381D8FD0B70000E54E /* 2.png */; };
+		B1F849431D8FD0B70000E54E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849391D8FD0B70000E54E /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		B1192A871D8D1F140056B186 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		B1192AC31D8F6C980056B186 /* timerIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = timerIcons; sourceTree = "<group>"; };
 		B12B47221D888F8F003855CD /* SabaccIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccIcon2.png; sourceTree = "<group>"; };
 		B14995661D827B5500ADD3D2 /* Sabacc New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sabacc New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14995691D827B5500ADD3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,16 @@
 		B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabacc rotate.png"; sourceTree = "<group>"; };
 		B14995A91D8630DA00ADD3D2 /* Players Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players Icon1.png"; sourceTree = "<group>"; };
 		B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
+		B1F849301D8FD0B70000E54E /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		B1F849311D8FD0B70000E54E /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		B1F849321D8FD0B70000E54E /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		B1F849331D8FD0B70000E54E /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		B1F849341D8FD0B70000E54E /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		B1F849351D8FD0B70000E54E /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		B1F849361D8FD0B70000E54E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		B1F849371D8FD0B70000E54E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		B1F849381D8FD0B70000E54E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		B1F849391D8FD0B70000E54E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +144,16 @@
 				B14995A91D8630DA00ADD3D2 /* Players Icon1.png */,
 				B12B47221D888F8F003855CD /* SabaccIcon2.png */,
 				B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */,
-				B1192AC31D8F6C980056B186 /* timerIcons */,
+				B1F849301D8FD0B70000E54E /* 6.png */,
+				B1F849311D8FD0B70000E54E /* 7.png */,
+				B1F849321D8FD0B70000E54E /* 8.png */,
+				B1F849331D8FD0B70000E54E /* 9.png */,
+				B1F849341D8FD0B70000E54E /* 10.png */,
+				B1F849351D8FD0B70000E54E /* 5.png */,
+				B1F849361D8FD0B70000E54E /* 4.png */,
+				B1F849371D8FD0B70000E54E /* 3.png */,
+				B1F849381D8FD0B70000E54E /* 2.png */,
+				B1F849391D8FD0B70000E54E /* 1.png */,
 			);
 			path = "Sabacc New";
 			sourceTree = "<group>";
@@ -257,13 +284,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F849421D8FD0B70000E54E /* 2.png in Resources */,
+				B1F8493A1D8FD0B70000E54E /* 6.png in Resources */,
 				B14995761D827B5500ADD3D2 /* LaunchScreen.storyboard in Resources */,
 				B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */,
+				B1F8493E1D8FD0B70000E54E /* 10.png in Resources */,
+				B1F8493D1D8FD0B70000E54E /* 9.png in Resources */,
 				B14995731D827B5500ADD3D2 /* Assets.xcassets in Resources */,
 				B14995711D827B5500ADD3D2 /* Main.storyboard in Resources */,
 				B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */,
-				B1192AC41D8F6C980056B186 /* timerIcons in Resources */,
+				B1F8493C1D8FD0B70000E54E /* 8.png in Resources */,
+				B1F8493F1D8FD0B70000E54E /* 5.png in Resources */,
+				B1F849401D8FD0B70000E54E /* 4.png in Resources */,
 				B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */,
+				B1F849411D8FD0B70000E54E /* 3.png in Resources */,
+				B1F8493B1D8FD0B70000E54E /* 7.png in Resources */,
+				B1F849431D8FD0B70000E54E /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

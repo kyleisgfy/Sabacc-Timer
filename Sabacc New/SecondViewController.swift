@@ -34,9 +34,9 @@ class SecondViewController:
     }
     
     @IBAction func startAnimationButton (_ sender:UIButton){
-        for index in 1...5 {
+        for index in 1...10 {
             print("image \(index).png put into array")
-            let imageName = "timerIcons.\(index).png"
+            let imageName = "\(index).png"
             imageList.append (UIImage (named: imageName))
             
         }
@@ -48,7 +48,7 @@ class SecondViewController:
     var imageList: Array! = []
     
     func startAnimation () -> Void {
-        print("Animation Start")
+        print("Animation has started")
         countDownOne.animationImages = imageList as? [UIImage]
         countDownOne.animationDuration = 1
         countDownOne.startAnimating()
