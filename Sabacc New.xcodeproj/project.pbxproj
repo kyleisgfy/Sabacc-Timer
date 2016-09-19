@@ -244,7 +244,8 @@
 				TargetAttributes = {
 					B14995651D827B5500ADD3D2 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = F9JYE6GX59;
+						DevelopmentTeam = LVU98FH97G;
+						DevelopmentTeamName = "Christopher Schneider (Personal Team)";
 						LastSwiftMigration = 0800;
 					};
 					B149957B1D827B5500ADD3D2 = {
@@ -480,7 +481,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sabacc New/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-New";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sabacc-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -495,7 +496,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sabacc New/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sevestyne-Labs.Sabacc-New";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sabacc-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;

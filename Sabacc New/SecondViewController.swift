@@ -35,7 +35,10 @@ class SecondViewController:
     }
     
     @IBAction func startAnimationButton (_ sender:UIButton){
-        for index in 0...9 {
+        
+        if isAnimating != true
+        {
+            for index in 1...10 {
             print("image \(index).png put into array")
             let imageName = "\(index).png"
             imageList.append (UIImage (named: imageName)!)
@@ -43,16 +46,18 @@ class SecondViewController:
         }
 
         startAnimation()
+        }
     }
     
-    
     var imageList: Array<AnyObject> = []
+    var isAnimating = false
     
-    func startAnimation () -> Void {
+    func startAnimation () {
         print("Animation has started")
         countDownOne.animationImages = imageList as? [UIImage]
         countDownOne.animationDuration = 1
         countDownOne.startAnimating()
+        isAnimating = true
     }
 
     
