@@ -35,7 +35,7 @@ class SecondViewController:
     }
     
     @IBAction func startAnimationButton (_ sender:UIButton){
-        for index in 1...10 {
+        for index in 0...9 {
             print("image \(index).png put into array")
             let imageName = "\(index).png"
             imageList.append (UIImage (named: imageName)!)

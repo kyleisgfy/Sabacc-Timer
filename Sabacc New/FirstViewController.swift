@@ -19,9 +19,18 @@ class FirstViewController:
     @IBOutlet var tblNames: UITableView!
     @IBOutlet weak var addName: UIButton!
     
+    @IBOutlet var swipeGesture: UIScreenEdgePanGestureRecognizer!
+    
+    func swipeLeft(recognizer : UISwipeGestureRecognizer) {
+        self.performSegue(withIdentifier: "MySegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.txtName.delegate = self
+        let recognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector(("swipeLeft:")))
+        recognizer.direction = .left
+        self.view .addGestureRecognizer(recognizer)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
