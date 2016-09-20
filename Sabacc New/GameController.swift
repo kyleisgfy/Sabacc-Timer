@@ -69,8 +69,9 @@ class GameController: NSObject {
     
     func timerDidFire () {
         print("Timer has fired")
-        secondView.stopAnimation()
-        //secondView.stopAnimation()
+        if isAnimating{
+           secondView.stopAnimation()
+        }
         gameCont.diceIsRolled()
         
     }

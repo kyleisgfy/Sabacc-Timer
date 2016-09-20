@@ -6,18 +6,15 @@
 //  Copyright © 2016 Kyle Schneider›‹. All rights reserved.
 //
 
-//import GameController
 import UIKit
 
 var secondView: SecondViewController = SecondViewController ()
+var isAnimating = false
 
 var imageList: Array<AnyObject> = []
 
 class SecondViewController:
       UIViewController {
-    
-    
-    var isAnimating = false
     
     
 //      ///Outlets and Buttons
@@ -52,6 +49,7 @@ class SecondViewController:
 
 //      // Function declation to start animation //     //
     func startAnimation () {
+        isAnimating = true
         print("Animation has started")
         countDownOne.animationImages = imageList as? [UIImage]
         countDownOne.animationDuration = 3
@@ -68,19 +66,18 @@ class SecondViewController:
         countDownFive.animationImages = imageList as? [UIImage]
         countDownFive.animationDuration = 2
         countDownFive.startAnimating()
-        isAnimating = true
     }
 
     
     //      // Function Declation to stop anamation //      //
     func stopAnimation () {
-        countDownOne.stopAnimating()
-        countDownTwo.stopAnimating()
-        countDownThree.stopAnimating()
-        countDownFour.stopAnimating()
-        countDownFive.stopAnimating()
-        isAnimating = false
-        print("Animation is stopped.")
+            countDownOne.stopAnimating()
+            countDownTwo.stopAnimating()
+            countDownThree.stopAnimating()
+            countDownFour.stopAnimating()
+            countDownFive.stopAnimating()
+            isAnimating = false
+            print("Animation is stopped.")
     }
     
 // View Did Load
@@ -95,6 +92,7 @@ class SecondViewController:
 // View Will Appear
     override func viewWillAppear(_ animated: Bool) {
         print("View 2 Will Appear")
+        stopAnimation ()
     
     }
     
