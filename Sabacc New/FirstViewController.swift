@@ -19,20 +19,19 @@ class FirstViewController:
     @IBOutlet var tblNames: UITableView!
     @IBOutlet weak var addName: UIButton!
     
-    @IBOutlet var swipeGesture: UIScreenEdgePanGestureRecognizer!
-    
-    func swipeLeft(recognizer : UISwipeGestureRecognizer) {
-        self.performSegue(withIdentifier: "MySegue", sender: self)
-    }
+//    func swipe(gesture : UIGestureRecognizer) {
+//           print("Swipe Left Invoked")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.txtName.delegate = self
-        let recognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector(("swipeLeft:")))
-        recognizer.direction = .left
-        self.view .addGestureRecognizer(recognizer)
-    }
+        
+//        let leftSwipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: (Selector(("swipe:"))))
+//        leftSwipe.direction = .left
+//        view.addGestureRecognizer(leftSwipe)
     
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         super.touchesBegan(touches, with: event)
@@ -63,18 +62,21 @@ class FirstViewController:
         
         return cell
     }
-    //function to add player after button is pressed
-    @IBAction func btnAddName_Click(_ sender: UIButton){
-        playerMgr.addPlayer(txtName.text!)
-       // self.view.endEditing(true)
-        txtName.text = ""
-        tblNames.reloadData()
-    }
+//    //function to add player after button is pressed
+//    @IBAction func btnAddName_Click(_ sender: UIButton){
+//        playerMgr.addPlayer(txtName.text!)
+//       // self.view.endEditing(true)
+//        txtName.text = ""
+//        tblNames.reloadData()
+//    }
     
     //UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        textField.resignFirstResponder()
+        playerMgr.addPlayer(txtName.text!)
+        // self.view.endEditing(true)
+        txtName.text = ""
+        tblNames.reloadData()
+        //textField.resignFirstResponder()
         
         return true
     }
@@ -83,10 +85,6 @@ class FirstViewController:
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-//IOS Touch Functions
-//override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!){
-//    self.view.endEditing(true)
 
 }
 

@@ -37,32 +37,17 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="rDd-cX-Cix"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-Uw-TG6">
-                                <frame key="frameInset" minX="338" minY="49" width="30" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="btnAddName_Click:" destination="9pv-A4-QxB" eventType="touchUpInside" id="a4k-6N-XDu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8515087366104126" green="0.86194688081741333" blue="0.88001900911331177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="ai2-EA-Yum" appends="YES" id="x2c-37-fRt"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Players" image="first" selectedImage="second" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="addName" destination="BoF-Uw-TG6" id="a4A-uj-bfu"/>
-                        <outlet property="swipeGesture" destination="ai2-EA-Yum" id="2ev-Cc-Tpr"/>
                         <outlet property="tblNames" destination="xEs-2r-x6e" id="PF3-Oo-pTi"/>
                         <outlet property="txtName" destination="Izo-zA-Vdn" id="QO5-yd-5Wm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="ai2-EA-Yum"/>
             </objects>
             <point key="canvasLocation" x="724" y="0.0"/>
         </scene>
@@ -78,14 +63,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUb-Pn-7Oc">
-                                <frame key="frameInset" minY="580" width="375" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="testButtonFunc_Click:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5YO-BU-Zsy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-Ke-3fq">
                                 <frame key="frameInset" minX="134" minY="542" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -94,25 +71,16 @@
                                     <action selector="startAnimationButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="585-iF-tew"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-5b-ogS">
+                            <stackView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-5b-ogS">
                                 <frame key="frameInset" minX="15" minY="94" width="345" height="70"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-Cu-9SI" userLabel="countDownOne">
-                                        <frame key="frameInset" width="69" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-Aq-x0L" userLabel="countDownTwo">
-                                        <frame key="frameInset" minX="69" width="69" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-2w-9rj" userLabel="countDownThree">
-                                        <frame key="frameInset" minX="138" width="69" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OU8-63-Idg" userLabel="countDownFour">
-                                        <frame key="frameInset" minX="207" width="69" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownFive">
-                                        <frame key="frameInset" minX="276" width="69" height="70"/>
-                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-Cu-9SI" userLabel="countDownOne"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-Aq-x0L" userLabel="countDownTwo"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-2w-9rj" userLabel="countDownThree"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OU8-63-Idg" userLabel="countDownFour"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownFive"/>
                                 </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.35157764060000002" green="0.52108555329999995" blue="0.60349197460000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,7 +98,6 @@
                         <outlet property="countDownThree" destination="3gS-2w-9rj" id="Sig-Zl-t0R"/>
                         <outlet property="countDownTwo" destination="dfs-Aq-x0L" id="2YA-ze-Tkg"/>
                         <outlet property="startAnimationButton" destination="VHt-Ke-3fq" id="ULp-aD-fYo"/>
-                        <outlet property="testButton" destination="cUb-Pn-7Oc" id="9gU-rL-UuG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

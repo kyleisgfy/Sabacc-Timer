@@ -6,13 +6,17 @@
 //  Copyright © 2016 Kyle Schneider›‹. All rights reserved.
 //
 
-import GameController
+//import GameController
 import UIKit
 
+var secondView: SecondViewController = SecondViewController ()
+
+var imageList: Array<AnyObject> = []
+
 class SecondViewController:
-      UIViewController
-{
-    var imageList: Array<AnyObject> = []
+      UIViewController {
+    
+    
     var isAnimating = false
     
     
@@ -26,19 +30,6 @@ class SecondViewController:
     
 //    @IBOutlet weak var gameStyle: UIPickerView!
     @IBOutlet weak var startAnimationButton: UIButton!
-    @IBOutlet weak var testButton: UIButton!
-    @IBAction func testButtonFunc_Click(_ sender:UIButton){
-    
-        //      ///Simulate Timer did fire
-    
-        print("Shift Button Pressed")
-        countDownOne.stopAnimating()
-        gameCont.diceIsRolled()
-        
-        //      ///Timer Running
-        
-        gameCont.randomTimeIntervalGenerator ()
-    }
     
     @IBAction func startAnimationButton (_ sender:UIButton){
         if isAnimating != true {
@@ -47,12 +38,20 @@ class SecondViewController:
                 let imageName = "\(index).png"
                 imageList.append (UIImage (named: imageName)!)
             }
-            startAnimationOne()
+            
+            if timer.isValid{
+                print("timer is already running")
+            } else {
+                startAnimation()
+                gameCont.randomTimeIntervalGenerator ()
+                gameCont.sabaccTimer()
+                print("timer started")
+            }
         }
     }
 
-    
-    func startAnimationOne () {
+//      // Function declation to start animation //     //
+    func startAnimation () {
         print("Animation has started")
         countDownOne.animationImages = imageList as? [UIImage]
         countDownOne.animationDuration = 3
@@ -73,6 +72,16 @@ class SecondViewController:
     }
 
     
+    //      // Function Declation to stop anamation //      //
+    func stopAnimation () {
+        countDownOne.stopAnimating()
+        countDownTwo.stopAnimating()
+        countDownThree.stopAnimating()
+        countDownFour.stopAnimating()
+        countDownFive.stopAnimating()
+        isAnimating = false
+        print("Animation is stopped.")
+    }
     
 // View Did Load
     
@@ -80,13 +89,6 @@ class SecondViewController:
         super.viewDidLoad()
         print("View 2 Did Load")
         
-        if timer.isValid{
-            print("timer is already running")
-        } else {
-            gameCont.sabaccTimer()
-            print("timer started")
-        }
-       
         }
 
 
@@ -104,43 +106,19 @@ class SecondViewController:
     
     override func viewDidLayoutSubviews(){
         print("View 2 Did Layout Subviews")
+        
     }
    
 // View Will Appear
     override func viewDidAppear(_ animated: Bool) {
-
-//      ///Rotation Graphic
         super.viewDidAppear(animated)
         
-       
-    
-    
-    
-
-        
     }
+
 //    @IBOutlet weak var gameStyleDiscription: UITextView!
 //    var pickerViewDataSource = ["Corisant Rules", "Smuggler's Rules, Jabba's Rules"]
 //    let gameStyle.dataSource:UIPickerView = pickerViewDataSource
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
 }
     
         

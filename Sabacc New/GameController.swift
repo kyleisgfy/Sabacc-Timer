@@ -28,7 +28,7 @@ class GameController: NSObject {
     
 /// Dice Rolling Simulator ///
 //    rolls dice for each player and saves the value in player structure.
-//    additionaly, sets the player's current shift and modifier vallue to true or false based on said roll.
+//    additionaly, sets the player's current shift and modifier value to true or false based on said roll.
 
     func diceIsRolled() {
         var i = 0
@@ -61,7 +61,6 @@ class GameController: NSObject {
 
 
     func randomTimeIntervalGenerator () {
-        print("Random number called.")
         var numberOfPlayers:UInt32 = UInt32(playerMgr.players.count)
         numberOfPlayers += 1
         randomTimeInterval = Int(arc4random_uniform(numberOfPlayers*30)+(numberOfPlayers)*60)
@@ -70,19 +69,18 @@ class GameController: NSObject {
     
     func timerDidFire () {
         print("Timer has fired")
+        secondView.stopAnimation()
+        //secondView.stopAnimation()
+        gameCont.diceIsRolled()
+        
     }
     
     
     
      func sabaccTimer () {
         print("Timer has been called.")
-        timer = Timer.scheduledTimer(timeInterval: 20, target: self, selector: #selector(GameController.timerDidFire), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 5/*TimeInterval(randomTimeInterval)*/, target: self, selector: #selector(GameController.timerDidFire), userInfo: nil, repeats: false)
         
     }
-    
-
-    
-    
-    
-    
 }
+
