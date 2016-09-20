@@ -6,12 +6,18 @@
 //  Copyright © 2016 Kyle Schneider›‹. All rights reserved.
 //
 
+import GameController
 import UIKit
 
 class SecondViewController:
       UIViewController
 {
+    var imageList: Array<AnyObject> = []
+    var isAnimating = false
+    
+    
 //      ///Outlets and Buttons
+    
     @IBOutlet weak var countDownOne: UIImageView!
 //    @IBOutlet weak var gameStyle: UIPickerView!
     @IBOutlet weak var startAnimationButton: UIButton!
@@ -39,10 +45,6 @@ class SecondViewController:
             startAnimation()
         }
     }
-
-    
-    var imageList: Array<AnyObject> = []
-    var isAnimating = false
     
     func startAnimation () {
         print("Animation has started")
@@ -59,16 +61,27 @@ class SecondViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View 2 Did Load")
-    }
+        
+        if timer.isValid{
+            print("timer is already running")
+        } else {
+            gameCont.sabaccTimer()
+            print("timer started")
+        }
+       
+        }
+
 
 // View Will Appear
     override func viewWillAppear(_ animated: Bool) {
         print("View 2 Will Appear")
+    
     }
     
 // View Will Layout Subviews
     override func viewWillLayoutSubviews() {
         print("View 2 Will Layout Subviews")
+        
     }
     
     override func viewDidLayoutSubviews(){
@@ -80,6 +93,7 @@ class SecondViewController:
 
 //      ///Rotation Graphic
         super.viewDidAppear(animated)
+        
        
     
     

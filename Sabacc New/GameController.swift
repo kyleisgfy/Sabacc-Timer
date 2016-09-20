@@ -9,10 +9,13 @@
 import UIKit
 
 var gameCont: GameController = GameController ()
+var timer = Timer ()
 
 class GameController: NSObject {
     
-    
+
+    var randomTimeInterval = 60
+
 ///       ///      ///     Functions      ///      ///     ///
 
 
@@ -56,7 +59,6 @@ class GameController: NSObject {
 //      Generates a random number range for the timer to count down from.
 //      The number is based on how many players are currently playing the game and eligible to shift.
 
-    var randomTimeInterval = 60
 
     func randomTimeIntervalGenerator () {
         print("Random number called.")
@@ -66,18 +68,17 @@ class GameController: NSObject {
         print("Random number generated. Timer will count down from \(randomTimeInterval)")
     }
     
-    func timerFired () {
+    func timerDidFire () {
         print("Timer has fired")
     }
     
-//    func sabaccTimer () {
-//     print("Timer has been called.")
-//     Timer.scheduledTimer (randomTimeInterval: TimeInterval,
-//                             Nil: NSInvocation,
-//                             No: Bool) -> Timer
-//
-//
-//    }
+    
+    
+     func sabaccTimer () {
+        print("Timer has been called.")
+        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(GameController.timerDidFire), userInfo: nil, repeats: false)
+        
+    }
     
 
     
