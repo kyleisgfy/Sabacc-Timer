@@ -86,10 +86,6 @@
                                     <action selector="testButtonFunc_Click:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5YO-BU-Zsy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownOne">
-                                <frame key="frameInset" minX="81" minY="75" width="213" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-Ke-3fq">
                                 <frame key="frameInset" minX="134" minY="542" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,12 +94,41 @@
                                     <action selector="startAnimationButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="585-iF-tew"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-5b-ogS">
+                                <frame key="frameInset" minX="15" minY="94" width="345" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-Cu-9SI" userLabel="countDownOne">
+                                        <frame key="frameInset" width="69" height="70"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-Aq-x0L" userLabel="countDownTwo">
+                                        <frame key="frameInset" minX="69" width="69" height="70"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-2w-9rj" userLabel="countDownThree">
+                                        <frame key="frameInset" minX="138" width="69" height="70"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OU8-63-Idg" userLabel="countDownFour">
+                                        <frame key="frameInset" minX="207" width="69" height="70"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownFive">
+                                        <frame key="frameInset" minX="276" width="69" height="70"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.35157764060000002" green="0.52108555329999995" blue="0.60349197460000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YZl-5b-ogS" secondAttribute="trailing" constant="15" id="W8c-1Y-CeD"/>
+                            <constraint firstItem="YZl-5b-ogS" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="15" id="YKV-nf-WK2"/>
+                            <constraint firstItem="YZl-5b-ogS" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="74" id="jac-tX-okg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shift Timer" image="first" selectedImage="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="countDownOne" destination="ciU-mJ-NFs" id="Y2s-jG-Q1o"/>
+                        <outlet property="countDownFive" destination="ciU-mJ-NFs" id="l2X-NU-w8y"/>
+                        <outlet property="countDownFour" destination="OU8-63-Idg" id="yIL-oB-7de"/>
+                        <outlet property="countDownOne" destination="tcM-Cu-9SI" id="Wqc-Ca-cQi"/>
+                        <outlet property="countDownThree" destination="3gS-2w-9rj" id="Sig-Zl-t0R"/>
+                        <outlet property="countDownTwo" destination="dfs-Aq-x0L" id="2YA-ze-Tkg"/>
                         <outlet property="startAnimationButton" destination="VHt-Ke-3fq" id="ULp-aD-fYo"/>
                         <outlet property="testButton" destination="cUb-Pn-7Oc" id="9gU-rL-UuG"/>
                     </connections>

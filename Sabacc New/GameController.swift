@@ -76,7 +76,7 @@ class GameController: NSObject {
     
      func sabaccTimer () {
         print("Timer has been called.")
-        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(GameController.timerDidFire), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 20, target: self, selector: #selector(GameController.timerDidFire), userInfo: nil, repeats: false)
         
     }
     

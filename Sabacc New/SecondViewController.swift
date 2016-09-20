@@ -19,6 +19,11 @@ class SecondViewController:
 //      ///Outlets and Buttons
     
     @IBOutlet weak var countDownOne: UIImageView!
+    @IBOutlet weak var countDownTwo: UIImageView!
+    @IBOutlet weak var countDownThree: UIImageView!
+    @IBOutlet weak var countDownFour: UIImageView!
+    @IBOutlet weak var countDownFive: UIImageView!
+    
 //    @IBOutlet weak var gameStyle: UIPickerView!
     @IBOutlet weak var startAnimationButton: UIButton!
     @IBOutlet weak var testButton: UIButton!
@@ -42,15 +47,28 @@ class SecondViewController:
                 let imageName = "\(index).png"
                 imageList.append (UIImage (named: imageName)!)
             }
-            startAnimation()
+            startAnimationOne()
         }
     }
+
     
-    func startAnimation () {
+    func startAnimationOne () {
         print("Animation has started")
         countDownOne.animationImages = imageList as? [UIImage]
-        countDownOne.animationDuration = 1
+        countDownOne.animationDuration = 3
         countDownOne.startAnimating()
+        countDownTwo.animationImages = imageList as? [UIImage]
+        countDownTwo.animationDuration = 4
+        countDownTwo.startAnimating()
+        countDownThree.animationImages = imageList as? [UIImage]
+        countDownThree.animationDuration = 1
+        countDownThree.startAnimating()
+        countDownFour.animationImages = imageList as? [UIImage]
+        countDownFour.animationDuration = 5
+        countDownFour.startAnimating()
+        countDownFive.animationImages = imageList as? [UIImage]
+        countDownFive.animationDuration = 2
+        countDownFive.startAnimating()
         isAnimating = true
     }
 
