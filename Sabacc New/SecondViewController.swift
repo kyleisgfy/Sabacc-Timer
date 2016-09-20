@@ -11,20 +11,15 @@ import UIKit
 class SecondViewController:
       UIViewController
 {
-    
-
 //      ///Outlets and Buttons
     @IBOutlet weak var countDownOne: UIImageView!
 //    @IBOutlet weak var gameStyle: UIPickerView!
     @IBOutlet weak var startAnimationButton: UIButton!
-    
     @IBOutlet weak var testButton: UIButton!
     @IBAction func testButtonFunc_Click(_ sender:UIButton){
-        
-        
-        
-        //      ///Simulated Timer Fired
-        
+    
+        //      ///Simulate Timer did fire
+    
         print("Shift Button Pressed")
         countDownOne.stopAnimating()
         gameCont.diceIsRolled()
@@ -35,19 +30,16 @@ class SecondViewController:
     }
     
     @IBAction func startAnimationButton (_ sender:UIButton){
-        
-        if isAnimating != true
-        {
-            for index in 1...10 {
-            print("image \(index).png put into array")
-            let imageName = "\(index).png"
-            imageList.append (UIImage (named: imageName)!)
-            
-        }
-
-        startAnimation()
+        if isAnimating != true {
+            for index in 0...9 {
+                print("image \(index).png put into array")
+                let imageName = "\(index).png"
+                imageList.append (UIImage (named: imageName)!)
+            }
+            startAnimation()
         }
     }
+
     
     var imageList: Array<AnyObject> = []
     var isAnimating = false

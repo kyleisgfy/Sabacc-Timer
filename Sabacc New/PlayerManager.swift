@@ -12,7 +12,6 @@ var playerMgr: PlayerManager = PlayerManager ()
 
 
 
-
 struct structureOfPlayer{
     var name = "String"
     var shift =  false
@@ -24,6 +23,8 @@ struct structureOfPlayer{
 class PlayerManager: NSObject {
     
     var players = [structureOfPlayer] ()
+    let fileManager = (FileManager.default)
+    
     
     func addPlayer (_ name: String){
         players.append(structureOfPlayer(
@@ -31,6 +32,7 @@ class PlayerManager: NSObject {
             shift: false,
             modifier: false,
             playersCurrentDiceRoll: 0))
+    
+    
     }
-
 }
