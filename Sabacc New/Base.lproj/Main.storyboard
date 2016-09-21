@@ -105,7 +105,7 @@
                                 </subviews>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f2H-IN-Y5m">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2H-IN-Y5m">
                                 <frame key="frameInset" minX="15" minY="324" width="344" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,7 +133,6 @@
                         <outlet property="countDownOne" destination="tcM-Cu-9SI" id="Wqc-Ca-cQi"/>
                         <outlet property="countDownThree" destination="3gS-2w-9rj" id="Sig-Zl-t0R"/>
                         <outlet property="countDownTwo" destination="dfs-Aq-x0L" id="2YA-ze-Tkg"/>
-                        <outlet property="gameStyle" destination="k2N-dn-C5e" id="F7P-uE-iFw"/>
                         <outlet property="startAnimationButton" destination="VHt-Ke-3fq" id="ULp-aD-fYo"/>
                     </connections>
                 </viewController>

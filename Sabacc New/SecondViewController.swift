@@ -12,9 +12,10 @@ var isAnimating = false
 var imageList: Array<AnyObject> = []
 
 class SecondViewController:
-        UIViewController,
-        UIPickerViewDataSource,
-        UIPickerViewDelegate {
+        UIViewController
+//        UIPickerViewDataSource,
+//        UIPickerViewDelegate
+{
     
     var timer = Timer()
     var pickerData: [String] = [String]()
@@ -105,23 +106,23 @@ class SecondViewController:
         super.viewDidLoad()
         print("View 2 Did Load")
 
-        //      // Game Style Picker View
-        self.gameStylePicker.delegate = self
-        self.gameStylePicker.dataSource = self
-        pickerData = ["Corisant Rule's", "Smuggler's Rules", "Rules"]
+//        //      // Game Style Picker View
+//        self.gameStylePicker.delegate = self
+//        self.gameStylePicker.dataSource = self
+//        pickerData = ["Corisant Rule's", "Smuggler's Rules", "Rules"]
         
-        func numberOfComponentsInPickerView(GameStylePicker: UIPickerView) -> Int {
-            return 1
-        }
-        
-        func pickerView(gameStylePicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return pickerData.count
-        }
-        
-        func pickerView(GameStylePicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return pickerData[row]
-        }
-        
+//        func numberOfComponentsInPickerView(GameStylePicker: UIPickerView) -> Int {
+//            return 1
+//        }
+//        
+//        func pickerView(gameStylePicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//            return pickerData.count
+//        }
+//        
+//        func pickerView(GameStylePicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//            return pickerData[row]
+//        }
+//        
         }
 
 
