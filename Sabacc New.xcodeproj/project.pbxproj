@@ -21,6 +21,7 @@
 		B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */; };
 		B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B14995A91D8630DA00ADD3D2 /* Players Icon1.png */; };
 		B14995AE1D8642B500ADD3D2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */; };
+		B1780BD61D91E0AE0021470B /* SabaccBackgroundOne.png in Resources */ = {isa = PBXBuildFile; fileRef = B1780BD51D91E0AE0021470B /* SabaccBackgroundOne.png */; };
 		B1F8493A1D8FD0B70000E54E /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849301D8FD0B70000E54E /* 6.png */; };
 		B1F8493B1D8FD0B70000E54E /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849311D8FD0B70000E54E /* 7.png */; };
 		B1F8493C1D8FD0B70000E54E /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849321D8FD0B70000E54E /* 8.png */; };
@@ -31,6 +32,7 @@
 		B1F849411D8FD0B70000E54E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849371D8FD0B70000E54E /* 3.png */; };
 		B1F849421D8FD0B70000E54E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849381D8FD0B70000E54E /* 2.png */; };
 		B1F849431D8FD0B70000E54E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849391D8FD0B70000E54E /* 1.png */; };
+		B1FBBD5F1D92159300FC13C0 /* SabaccBackgroundTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FBBD5E1D92159300FC13C0 /* SabaccBackgroundTwo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabacc rotate.png"; sourceTree = "<group>"; };
 		B14995A91D8630DA00ADD3D2 /* Players Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players Icon1.png"; sourceTree = "<group>"; };
 		B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
+		B1780BD51D91E0AE0021470B /* SabaccBackgroundOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccBackgroundOne.png; sourceTree = "<group>"; };
 		B1F849301D8FD0B70000E54E /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		B1F849311D8FD0B70000E54E /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		B1F849321D8FD0B70000E54E /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		B1F849371D8FD0B70000E54E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		B1F849381D8FD0B70000E54E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		B1F849391D8FD0B70000E54E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B1FBBD5E1D92159300FC13C0 /* SabaccBackgroundTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccBackgroundTwo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				B14995A91D8630DA00ADD3D2 /* Players Icon1.png */,
 				B12B47221D888F8F003855CD /* SabaccIcon2.png */,
 				B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */,
+				B1780BD51D91E0AE0021470B /* SabaccBackgroundOne.png */,
+				B1FBBD5E1D92159300FC13C0 /* SabaccBackgroundTwo.png */,
 				B1F849301D8FD0B70000E54E /* 6.png */,
 				B1F849311D8FD0B70000E54E /* 7.png */,
 				B1F849321D8FD0B70000E54E /* 8.png */,
@@ -244,7 +250,7 @@
 				TargetAttributes = {
 					B14995651D827B5500ADD3D2 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LVU98FH97G;
+						DevelopmentTeam = F9JYE6GX59;
 						DevelopmentTeamName = "Christopher Schneider (Personal Team)";
 						LastSwiftMigration = 0800;
 					};
@@ -290,8 +296,10 @@
 				B14995761D827B5500ADD3D2 /* LaunchScreen.storyboard in Resources */,
 				B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */,
 				B1F8493E1D8FD0B70000E54E /* 0.png in Resources */,
+				B1FBBD5F1D92159300FC13C0 /* SabaccBackgroundTwo.png in Resources */,
 				B1F8493D1D8FD0B70000E54E /* 9.png in Resources */,
 				B14995731D827B5500ADD3D2 /* Assets.xcassets in Resources */,
+				B1780BD61D91E0AE0021470B /* SabaccBackgroundOne.png in Resources */,
 				B14995711D827B5500ADD3D2 /* Main.storyboard in Resources */,
 				B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */,
 				B1F8493C1D8FD0B70000E54E /* 8.png in Resources */,
@@ -479,9 +487,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = F9JYE6GX59;
 				INFOPLIST_FILE = "Sabacc New/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sabacc-New";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sabacc-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -494,9 +503,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = F9JYE6GX59;
 				INFOPLIST_FILE = "Sabacc New/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sabacc-New";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sabacc-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;

@@ -69,11 +69,11 @@ class ThirdViewController: UIViewController {
         
         for index in 0...(playerMgr.players.count - 1) {
             if playerMgr.players[index].shift == false {
-                self.labelArray[index].backgroundColor = UIColor.green()
+                self.labelArray[index].backgroundColor = UIColor.green
             } else if playerMgr.players[index].modifier == true {
-                self.labelArray[index].backgroundColor = UIColor.red()
+                self.labelArray[index].backgroundColor = UIColor.red
             } else {
-                self.labelArray[index].backgroundColor = UIColor.yellow()
+                self.labelArray[index].backgroundColor = UIColor.yellow
             }
         }
         

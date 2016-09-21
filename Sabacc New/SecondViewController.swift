@@ -8,13 +8,16 @@
 
 import UIKit
 
-var secondView: SecondViewController = SecondViewController ()
 var isAnimating = false
-
 var imageList: Array<AnyObject> = []
 
 class SecondViewController:
-      UIViewController {
+        UIViewController,
+        UIPickerViewDataSource,
+        UIPickerViewDelegate {
+    
+    var timer = Timer()
+    var pickerData: [String] = [String]()
     
     
 //      ///Outlets and Buttons
@@ -25,7 +28,7 @@ class SecondViewController:
     @IBOutlet weak var countDownFour: UIImageView!
     @IBOutlet weak var countDownFive: UIImageView!
     
-//    @IBOutlet weak var gameStyle: UIPickerView!
+    @IBOutlet weak var gameStylePicker: UIPickerView!
     @IBOutlet weak var startAnimationButton: UIButton!
     
     @IBAction func startAnimationButton (_ sender:UIButton){
@@ -40,14 +43,30 @@ class SecondViewController:
                 print("timer is already running")
             } else {
                 startAnimation()
-                gameCont.randomTimeIntervalGenerator ()
-                gameCont.sabaccTimer()
+                numberGenerator
+                sabaccTimer()
                 print("timer started")
             }
         }
     }
 
 //      // Function declation to start animation //     //
+    func sabaccTimer () {
+        print("Timer has been called.")
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(randomTimeInterval), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
+        
+    }
+    
+    func timerDidFire () {
+        print("Timer has fired")
+        if isAnimating{
+            stopAnimation()
+        }
+        dice
+        
+    }
+    
+    
     func startAnimation () {
         isAnimating = true
         print("Animation has started")
@@ -85,6 +104,23 @@ class SecondViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View 2 Did Load")
+
+        //      // Game Style Picker View
+        self.gameStylePicker.delegate = self
+        self.gameStylePicker.dataSource = self
+        pickerData = ["Corisant Rule's", "Smuggler's Rules", "Rules"]
+        
+        func numberOfComponentsInPickerView(GameStylePicker: UIPickerView) -> Int {
+            return 1
+        }
+        
+        func pickerView(gameStylePicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+            return pickerData.count
+        }
+        
+        func pickerView(GameStylePicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+            return pickerData[row]
+        }
         
         }
 
