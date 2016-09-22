@@ -18,7 +18,10 @@ class ThirdViewController: UIViewController {
 //      ///Labels
     
     var labelArray = Array (repeating: UILabel (), count: playerMgr.players.count)
+    let screenSize: CGRect = UIScreen.main.bounds
 
+
+    
 //View Did Load
     
     override func viewDidLoad() {
@@ -49,16 +52,18 @@ class ThirdViewController: UIViewController {
 //      Itterates through the list of labels and sets them to alpha 0.
 //      This makes them transparent to allow fade in animation.
 //      Changes the text of each label to the names in the player list.
+//            let screenWidth = screenSize.width
         
         for index in 0...(playerMgr.players.count - 1) {
             let label = UILabel()
             labelArray.append (label)
             labelArray[index].textAlignment = NSTextAlignment.center
             labelArray[index].adjustsFontSizeToFitWidth = true
-   //         labelArray[index].frame.width = (50, 150, 200, 21)
             labelArray[index].alpha = 0
             labelArray[index].text = "\(playerMgr.players[index].name)"
-            self.stackViewMain.addArrangedSubview(labelArray[index])
+            self.labelArray[index].alignment = .center
+            //self.stackViewMain.addArrangedSubview(labelArray[index])
+            self.labelArray[index].frame.size.width = view.frame.size.width
         }
 
 //      Changes the background color of each label to:
@@ -86,18 +91,18 @@ class ThirdViewController: UIViewController {
         super.viewDidAppear(animated)
 
 //      Animation to fade in labels
-//      Fades labels in to 50% alpha if they are green and player does not shift.
-//      Fades labels in to 70% alpha if they are yellow and player shifts one card.
+//      Fades labels in to 40% alpha if they are green and player does not shift.
+//      Fades labels in to 60% alpha if they are yellow and player shifts one card.
 //      Fades labels in to 100% alpha if the are red and player shifts two cards.
         
         UIView.animate(withDuration : 2, delay: 0, options: [], animations: {
         for index in 0...(playerMgr.players.count - 1) {
             if playerMgr.players[index].shift == false {
-                self.labelArray[index].alpha = 0.3
+                self.labelArray[index].alpha = 0.4
             } else if playerMgr.players[index].modifier == true {
                 self.labelArray[index].alpha = 1
             } else {
-                self.labelArray[index].alpha = 0.5
+                self.labelArray[index].alpha = 0.6
                 }
             }
         } , completion: nil )

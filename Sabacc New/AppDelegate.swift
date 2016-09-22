@@ -9,8 +9,8 @@
 import UIKit
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
-let dice = appDelegate.diceIsRolled()
-let numberGenerator = appDelegate.randomTimeIntervalGenerator()
+let dice: () = appDelegate.diceIsRolled()
+let numberGenerator: () = appDelegate.randomTimeIntervalGenerator()
 
 var randomTimeInterval = 60
     var timer = Timer()
