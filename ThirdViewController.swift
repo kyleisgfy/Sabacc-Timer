@@ -61,9 +61,8 @@ class ThirdViewController: UIViewController {
             labelArray[index].adjustsFontSizeToFitWidth = true
             labelArray[index].alpha = 0
             labelArray[index].text = "\(playerMgr.players[index].name)"
-            self.labelArray[index].alignment = .center
-            //self.stackViewMain.addArrangedSubview(labelArray[index])
-            self.labelArray[index].frame.size.width = view.frame.size.width
+            labelArray[index].frame.size.width = self.view.frame.size.width
+            self.stackViewMain.addArrangedSubview(labelArray[index])
         }
 
 //      Changes the background color of each label to:

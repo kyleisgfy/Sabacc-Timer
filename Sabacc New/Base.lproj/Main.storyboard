@@ -77,32 +77,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-Ke-3fq">
-                                <frame key="frameInset" minX="134" minY="542" width="107" height="30"/>
+                                <frame key="frameInset" minY="542" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Start Animation"/>
                                 <connections>
                                     <action selector="startAnimationButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="585-iF-tew"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-5b-ogS">
-                                <frame key="frameInset" minX="15" minY="94" width="345" height="70"/>
+                            <stackView opaque="NO" alpha="0.5" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-5b-ogS">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-Cu-9SI" userLabel="countDownOne">
-                                        <frame key="frameInset" width="70" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-Aq-x0L" userLabel="countDownTwo">
-                                        <frame key="frameInset" minX="70" width="70" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-2w-9rj" userLabel="countDownThree">
-                                        <frame key="frameInset" minX="140" width="54" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OU8-63-Idg" userLabel="countDownFour">
-                                        <frame key="frameInset" minX="194" width="83" height="70"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownFive">
-                                        <frame key="frameInset" minX="277" width="68" height="70"/>
-                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-Cu-9SI" userLabel="countDownOne"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-Aq-x0L" userLabel="countDownTwo"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-2w-9rj" userLabel="countDownThree"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="OU8-63-Idg" userLabel="countDownFour"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-mJ-NFs" userLabel="countDownFive"/>
                                 </subviews>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
@@ -165,8 +154,8 @@
                                 <frame key="frameInset" minY="20" width="375" height="598"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="center" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-sh-fPx" userLabel="stackViewMain">
-                                <frame key="frameInset" minY="5" width="375" height="598"/>
+                            <stackView opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-sh-fPx" userLabel="stackViewMain">
+                                <frame key="frameInset" minX="26" minY="20" width="323" height="578"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,6 +199,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0.png" width="74" height="90"/>
         <image name="SabaccBackgroundOne.png" width="3404" height="6042"/>
         <image name="SabaccBackgroundThree.png" width="3406" height="6042"/>
         <image name="SabaccBackgroundTwo.png" width="3404" height="6042"/>
