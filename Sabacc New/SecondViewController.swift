@@ -13,12 +13,10 @@ var imageList: Array<AnyObject> = []
 
 class SecondViewController:
         UIViewController
-//        UIPickerViewDataSource,
-//        UIPickerViewDelegate
 {
     
     var timer = Timer()
-    var pickerData: [String] = [String]()
+    var randomTimeInterval = 60
     
     
 //      ///Outlets and Buttons
@@ -30,47 +28,67 @@ class SecondViewController:
     @IBOutlet weak var countDownFive: UIImageView!
     
     @IBOutlet weak var gameStylePicker: UIPickerView!
-    @IBOutlet weak var startAnimationButton: UIButton!
-    
-    @IBAction func startAnimationButton (_ sender:UIButton){
-        if isAnimating != true {
-            for index in 0...9 {
-                print("image \(index).png put into array")
-                let imageName = "\(index).png"
-                imageList.append (UIImage (named: imageName)!)
-            }
-            
-            if timer.isValid{
-                print("timer is already running")
-            } else {
-                startAnimation()
-                numberGenerator
-                sabaccTimer()
-                print("timer started")
-            }
-        }
-    }
+    @IBOutlet weak var gameStyleDescription: UITextView!
 
-//      // Function declation to start animation //     //
+//      // Functions for timer //     //
+    
+    func randomTimeIntervalGenerator () {
+        var numberOfPlayers:UInt32 = UInt32(playerMgr.players.count)
+        numberOfPlayers += 1
+        randomTimeInterval = Int(arc4random_uniform(numberOfPlayers*30)+(numberOfPlayers)*60)
+        print("Random number generated. Timer will count down from \(randomTimeInterval/60):\(randomTimeInterval%60)")
+    }
+    
     func sabaccTimer () {
         print("Timer has been called.")
+        randomTimeIntervalGenerator()
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(randomTimeInterval), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
         
     }
     
     func timerDidFire () {
         print("Timer has fired")
-        if isAnimating{
-            stopAnimation()
-        }
-        dice
+        stopAnimation()
+        diceIsRolled()
+        //dice
         
     }
     
+//      // Function for Dice Roll //        //
+    func diceIsRolled() {
+        var i = 0
+        var die = 0
+        while (i < playerMgr.players.count) {
+            die = Int(arc4random_uniform(6)+1)
+            playerMgr.players[i].playersCurrentDiceRoll = die
+            print("player \(i+1) rolled \(die)")
+            if playerMgr.players[i].playersCurrentDiceRoll <= 3  {
+                playerMgr.players[i].shift = false
+                playerMgr.players[i].modifier = false
+                print("...and does not shift this round.")
+            } else if playerMgr.players[i].playersCurrentDiceRoll > 5 {
+                playerMgr.players[i].shift = true
+                playerMgr.players[i].modifier = true
+                print("...and shifts two cards this round")
+            } else {
+                playerMgr.players[i].shift = true
+                playerMgr.players[i].modifier = false
+                print("...and shifts one card this round")
+            }
+            i += 1
+        }
+    }
+
     
+    
+//      //  Function to start animation //     //
     func startAnimation () {
         isAnimating = true
-        print("Animation has started")
+        for index in 0...9 {
+            print("image \(index).png put into array")
+            let imageName = "\(index).png"
+            imageList.append (UIImage (named: imageName)!)
+        }
         countDownOne.animationImages = imageList as? [UIImage]
         countDownOne.animationDuration = 3
         countDownOne.startAnimating()
@@ -86,6 +104,7 @@ class SecondViewController:
         countDownFive.animationImages = imageList as? [UIImage]
         countDownFive.animationDuration = 2
         countDownFive.startAnimating()
+        print("Animation has started")
     }
 
     
@@ -99,37 +118,28 @@ class SecondViewController:
             isAnimating = false
             print("Animation is stopped.")
     }
+
     
 // View Did Load
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View 2 Did Load")
-
-//        //      // Game Style Picker View
-//        self.gameStylePicker.delegate = self
-//        self.gameStylePicker.dataSource = self
-//        pickerData = ["Corisant Rule's", "Smuggler's Rules", "Rules"]
-        
-//        func numberOfComponentsInPickerView(GameStylePicker: UIPickerView) -> Int {
-//            return 1
-//        }
-//        
-//        func pickerView(gameStylePicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//            return pickerData.count
-//        }
-//        
-//        func pickerView(GameStylePicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//            return pickerData[row]
-//        }
-//        
-        }
+    }
 
 
 // View Will Appear
     override func viewWillAppear(_ animated: Bool) {
         print("View 2 Will Appear")
-        stopAnimation ()
+        //stopAnimation ()
+        if timer.isValid != true {
+            print("Timer is not running, start timer.")
+            startAnimation()
+            sabaccTimer()
+            print("timer started")
+        } else {
+            print("Timer is already running.")
+        }
     
     }
     
@@ -139,8 +149,10 @@ class SecondViewController:
         
     }
     
-    override func viewDidLayoutSubviews(){
+// View Did Layout Subviews
+    override func viewDidLayoutSubviews() {
         print("View 2 Did Layout Subviews")
+        
         
     }
    
@@ -149,10 +161,6 @@ class SecondViewController:
         super.viewDidAppear(animated)
         
     }
-
-//    @IBOutlet weak var gameStyleDiscription: UITextView!
-//    var pickerViewDataSource = ["Corisant Rules", "Smuggler's Rules, Jabba's Rules"]
-//    let gameStyle.dataSource:UIPickerView = pickerViewDataSource
 
 }
     

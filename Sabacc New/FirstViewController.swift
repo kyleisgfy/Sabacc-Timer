@@ -62,13 +62,6 @@ class FirstViewController:
         
         return cell
     }
-//    //function to add player after button is pressed
-//    @IBAction func btnAddName_Click(_ sender: UIButton){
-//        playerMgr.addPlayer(txtName.text!)
-//       // self.view.endEditing(true)
-//        txtName.text = ""
-//        tblNames.reloadData()
-//    }
     
     //UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
