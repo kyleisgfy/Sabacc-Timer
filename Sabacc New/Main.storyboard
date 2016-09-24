@@ -85,6 +85,13 @@
                                 </subviews>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7yo-9V-qxs">
+                                <frame key="frameInset" minX="16" height="541" maxX="15" maxY="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="olZ-Va-auS" kind="embed" identifier="ShowShiftScreen" id="Z9N-CJ-nvP"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -94,12 +101,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shift Timer" image="first" selectedImage="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="uHc-br-5ng"/>
                     <connections>
                         <outlet property="countDownFive" destination="ciU-mJ-NFs" id="l2X-NU-w8y"/>
                         <outlet property="countDownFour" destination="OU8-63-Idg" id="yIL-oB-7de"/>
                         <outlet property="countDownOne" destination="tcM-Cu-9SI" id="Wqc-Ca-cQi"/>
                         <outlet property="countDownThree" destination="3gS-2w-9rj" id="Sig-Zl-t0R"/>
                         <outlet property="countDownTwo" destination="dfs-Aq-x0L" id="2YA-ze-Tkg"/>
+                        <segue destination="bCT-ha-ZAq" kind="show" identifier="ShowThirdViewController" id="MV6-Uq-8mb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -130,8 +139,7 @@
                                 <frame key="frameInset" minX="0.0%" minY="3.00%" width="100.00%" height="89.66%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-sh-fPx" userLabel="stackViewMain">
-                                <frame key="frameInset" minX="26" minY="38" width="325" height="560"/>
+                            <stackView opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-sh-fPx" userLabel="stackViewMain">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="Nea-7t-x57"/>
                                 </constraints>
@@ -175,6 +183,29 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kwj-lx-brr">
+            <objects>
+                <viewController id="olZ-Va-auS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Us0-v1-uib">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="541"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suI-bz-CwX">
+                                <frame key="frameInset" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="suI-bz-CwX" firstAttribute="top" secondItem="Us0-v1-uib" secondAttribute="top" id="Whg-29-P8n"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFN-eI-bgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="-699"/>
+        </scene>
     </scenes>
     <resources>
         <image name="0.png" width="74" height="90"/>
@@ -184,4 +215,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MV6-Uq-8mb"/>
+    </inferredMetricsTieBreakers>
 </document>

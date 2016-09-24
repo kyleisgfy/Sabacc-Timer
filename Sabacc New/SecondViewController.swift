@@ -42,7 +42,7 @@ class SecondViewController:
     func sabaccTimer () {
         print("Timer has been called.")
         randomTimeIntervalGenerator()
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(randomTimeInterval), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(3/*randomTimeInterval*/), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
         
     }
     
@@ -50,6 +50,7 @@ class SecondViewController:
         print("Timer has fired")
         stopAnimation()
         diceIsRolled()
+        self.performSegue(withIdentifier: "ShowThirdViewController", sender:self)
         //dice
         
     }
