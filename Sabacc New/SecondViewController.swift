@@ -42,7 +42,7 @@ class SecondViewController:
     func sabaccTimer () {
         print("Timer has been called.")
         randomTimeIntervalGenerator()
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(3/*randomTimeInterval*/), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(randomTimeInterval), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
         
     }
     
@@ -50,9 +50,7 @@ class SecondViewController:
         print("Timer has fired")
         stopAnimation()
         diceIsRolled()
-        self.performSegue(withIdentifier: "ShowThirdViewController", sender:self)
-        //dice
-        
+        self.performSegue(withIdentifier: "showShiftView", sender:self)
     }
     
 //      // Function for Dice Roll //        //
@@ -83,13 +81,19 @@ class SecondViewController:
     
     
 //      //  Function to start animation //     //
-    func startAnimation () {
-        isAnimating = true
+    
+    func assignImageList () {
         for index in 0...9 {
             print("image \(index).png put into array")
             let imageName = "\(index).png"
             imageList.append (UIImage (named: imageName)!)
         }
+    }
+    
+    
+    func startAnimation () {
+        isAnimating = true
+
         countDownOne.animationImages = imageList as? [UIImage]
         countDownOne.animationDuration = 3
         countDownOne.startAnimating()
@@ -126,6 +130,7 @@ class SecondViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View 2 Did Load")
+        assignImageList()
     }
 
 
@@ -144,24 +149,24 @@ class SecondViewController:
     
     }
     
-// View Will Layout Subviews
-    override func viewWillLayoutSubviews() {
-        print("View 2 Will Layout Subviews")
-        
-    }
+//// View Will Layout Subviews
+//    override func viewWillLayoutSubviews() {
+//        print("View 2 Will Layout Subviews")
+//        
+//    }
     
-// View Did Layout Subviews
-    override func viewDidLayoutSubviews() {
-        print("View 2 Did Layout Subviews")
-        
-        
-    }
+//// View Did Layout Subviews
+//    override func viewDidLayoutSubviews() {
+//        print("View 2 Did Layout Subviews")
+//        
+//        
+//    }
    
-// View Will Appear
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
+//// View Will Appear
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//    }
 
 }
     

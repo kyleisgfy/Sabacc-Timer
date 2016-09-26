@@ -17,7 +17,6 @@ class FirstViewController:
 
     @IBOutlet var txtName: UITextField!
     @IBOutlet var tblNames: UITableView!
-    @IBOutlet weak var addName: UIButton!
     
 //    func swipe(gesture : UIGestureRecognizer) {
 //           print("Swipe Left Invoked")

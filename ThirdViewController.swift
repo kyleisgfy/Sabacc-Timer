@@ -11,12 +11,16 @@ import UIKit
 class ThirdViewController: UIViewController {
     
 //      ///Buttons
-    @IBOutlet weak var resetButton: UILabel!
+    @IBOutlet weak var backButton: UILabel!
     @IBOutlet weak var stackViewMain: UIStackView!
     
     
 //      ///Labels
     var labelArray = Array (repeating: UILabel (), count: playerMgr.players.count)
+    
+
+    
+    
 
 //View Did Load
     
@@ -38,6 +42,7 @@ class ThirdViewController: UIViewController {
 
 for index in 0...(playerMgr.players.count - 1) {
     let label = UILabel()
+    print("Creating Player \(index+1)")
     labelArray.append (label)
     labelArray[index].textAlignment = NSTextAlignment.center
     labelArray[index].adjustsFontSizeToFitWidth = true
@@ -45,6 +50,7 @@ for index in 0...(playerMgr.players.count - 1) {
     labelArray[index].text = "\(playerMgr.players[index].name)"
     labelArray[index].frame.size.width = self.view.frame.size.width
     self.stackViewMain.addArrangedSubview(labelArray[index])
+    print("Player \(index+1) created")
 }
 
 //      Changes the background color of each label to:
