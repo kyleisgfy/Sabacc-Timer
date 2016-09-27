@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 var isAnimating = false
 var imageList: Array<AnyObject> = []
+var durationList: Array<Int> = []
 
 class SecondViewController:
         UIViewController
@@ -29,8 +31,23 @@ class SecondViewController:
     
     @IBOutlet weak var gameStylePicker: UIPickerView!
     @IBOutlet weak var gameStyleDescription: UITextView!
+    
+    var computer = AVAudioPlayer()
 
 //      // Functions for timer //     //
+    
+    func computerSound () {
+        let path = Bundle.main.path(forResource: "computerAudio", ofType: "wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            computer = sound
+            sound.play()
+        } catch {
+            // couldn't load file :(
+        }
+    }
     
     func randomTimeIntervalGenerator () {
         var numberOfPlayers:UInt32 = UInt32(playerMgr.players.count)
@@ -41,6 +58,7 @@ class SecondViewController:
     
     func sabaccTimer () {
         print("Timer has been called.")
+        computerSound ()
         randomTimeIntervalGenerator()
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(randomTimeInterval), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
         
@@ -88,6 +106,10 @@ class SecondViewController:
             let imageName = "\(index).png"
             imageList.append (UIImage (named: imageName)!)
         }
+    }
+    
+    func assignAnimationDuration () {
+        
     }
     
     

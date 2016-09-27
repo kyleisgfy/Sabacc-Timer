@@ -20,9 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SabaccBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="oxo-Q6-GQt"/>
-                            <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xEs-2r-x6e">
-                                <frame key="frameInset" minX="64" minY="110" width="246" height="444"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xEs-2r-x6e">
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -32,9 +30,7 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="rDd-cX-Cix"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Izo-zA-Vdn">
-                                <frame key="frameInset" minX="95" minY="63" width="66.43%" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Izo-zA-Vdn">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="SFDistantGalaxySymbols" family="SF Distant Galaxy Symbols" pointSize="11"/>
@@ -47,9 +43,16 @@
                         <color key="backgroundColor" red="0.35157764060000002" green="0.52108555329999995" blue="0.60349197460000004" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Izo-zA-Vdn" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="5yI-q4-IzM"/>
+                            <constraint firstItem="xEs-2r-x6e" firstAttribute="top" secondItem="Izo-zA-Vdn" secondAttribute="bottom" constant="17" id="7Ws-0B-KJz"/>
                             <constraint firstItem="oxo-Q6-GQt" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="8Ja-Ph-Php"/>
+                            <constraint firstItem="xEs-2r-x6e" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="48" id="Fst-F5-rxw"/>
+                            <constraint firstItem="Izo-zA-Vdn" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="43" id="G19-Ka-XLd"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="xEs-2r-x6e" secondAttribute="bottom" constant="64" id="Jm1-D4-UJJ"/>
                             <constraint firstItem="oxo-Q6-GQt" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="VxZ-Ch-g2S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oxo-Q6-GQt" secondAttribute="trailing" constant="-24" id="bgJ-5j-4RB"/>
+                            <constraint firstItem="Izo-zA-Vdn" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="79" id="cW6-Me-2bn"/>
+                            <constraint firstItem="xEs-2r-x6e" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="k3D-JO-VWv"/>
                             <constraint firstItem="oxo-Q6-GQt" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="xV0-Fy-c3j"/>
                         </constraints>
                     </view>
@@ -133,7 +136,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SabaccBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-xI-MOu"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6J-id-DVJ">
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Reset Timer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="returnToTimer:" destination="3Bp-mz-OjA" eventType="touchUpInside" id="1Pq-pY-9yg"/>
                                 </connections>

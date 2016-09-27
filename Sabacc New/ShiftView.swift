@@ -12,6 +12,8 @@ import AVFoundation
 class shiftView: UIViewController {
     
     let systemSoundID: SystemSoundID = 1016
+    var alarm = AVAudioPlayer()
+    
     
     //      ///Buttons
     @IBOutlet weak var shiftStackView: UIStackView!
@@ -19,6 +21,7 @@ class shiftView: UIViewController {
     
     @IBAction func returnToTimer(_ sender: AnyObject) {
         if((self.presentingViewController) != nil){
+            alarm.stop()
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -37,17 +40,10 @@ class shiftView: UIViewController {
     func timeOutOccured () {
         print("Shift view timed out, loading timer view.")
         if((self.presentingViewController) != nil){
+            alarm.stop()
             self.dismiss(animated: true, completion: nil)
         }
         
-    }
-    
-    func audioLoop () {
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(1), target: self, selector: #selector(playSound), userInfo: nil, repeats : true)
-    }
-    
-    func playSound() {
-        AudioServicesPlaySystemSound (systemSoundID)
     }
     
     //View Did Load
@@ -103,7 +99,16 @@ class shiftView: UIViewController {
     override func viewWillLayoutSubviews() {
         print("view 3 Will Layout Subviews")
         isAnimating = false
-        //audioLoop()
+        let path = Bundle.main.path(forResource: "sirenNoise", ofType: "wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            alarm = sound
+            sound.play()
+        } catch {
+            // couldn't load file :(
+        }
         
     }
     

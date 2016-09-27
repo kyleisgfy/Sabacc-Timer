@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FirstViewController:
 
@@ -18,39 +19,34 @@ class FirstViewController:
     @IBOutlet var txtName: UITextField!
     @IBOutlet var tblNames: UITableView!
     
-//    func swipe(gesture : UIGestureRecognizer) {
-//           print("Swipe Left Invoked")
-//    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.txtName.delegate = self
-        
-//        let leftSwipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: (Selector(("swipe:"))))
-//        leftSwipe.direction = .left
-//        view.addGestureRecognizer(leftSwipe)
-    
-    }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-        super.touchesBegan(touches, with: event)
-    }
+    var cantinaAudio = AVAudioPlayer()
     
     //UITable View Data Source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return playerMgr.players.count
     }
-
+    
     //Load Data In Table View
     override func viewWillAppear(_ animated: Bool){
-        tblNames.reloadData();
+        tblNames.reloadData()
+        let path = Bundle.main.path(forResource: "cantinaSong", ofType: nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            cantinaAudio = sound
+            sound.play()
+        } catch {
+            // couldn't load file :(
+        }
+        
     }
     
     //Delete Names in Table View
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if(editingStyle == UITableViewCellEditingStyle.delete){
-        playerMgr.players.remove(at: (indexPath as NSIndexPath).row)
-        tblNames.reloadData()
+            playerMgr.players.remove(at: (indexPath as NSIndexPath).row)
+            tblNames.reloadData()
         }
     }
     //Add Player Gets Pressed
@@ -71,6 +67,32 @@ class FirstViewController:
         //textField.resignFirstResponder()
         
         return true
+    }
+
+//    func swipe(gesture : UIGestureRecognizer) {
+//           print("Swipe Left Invoked")
+//    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.txtName.delegate = self
+        
+//        let leftSwipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: (Selector(("swipe:"))))
+//        leftSwipe.direction = .left
+//        view.addGestureRecognizer(leftSwipe)
+    
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if cantinaAudio != nil {
+            cantinaAudio.stop()
+//            cantinaAudio = nil
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
