@@ -151,14 +151,13 @@
                             <constraint firstItem="DMa-xI-MOu" firstAttribute="trailing" secondItem="E6J-id-DVJ" secondAttribute="trailing" id="DPb-Vt-HHb"/>
                             <constraint firstAttribute="trailing" secondItem="E6J-id-DVJ" secondAttribute="trailing" id="DTJ-hJ-FqY"/>
                             <constraint firstItem="DMa-xI-MOu" firstAttribute="leading" secondItem="E6J-id-DVJ" secondAttribute="leading" id="JV6-QO-qqz"/>
-                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="leading" secondItem="yic-yC-a5T" secondAttribute="leadingMargin" id="XXY-P8-ibU"/>
                             <constraint firstItem="DMa-xI-MOu" firstAttribute="bottom" secondItem="O1B-hR-x1C" secondAttribute="top" id="Xtf-r7-pRq"/>
                             <constraint firstItem="E6J-id-DVJ" firstAttribute="leading" secondItem="yic-yC-a5T" secondAttribute="leading" id="bS8-64-ECS"/>
-                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="top" secondItem="Opi-BJ-PMQ" secondAttribute="bottom" id="eoe-jd-XJM"/>
-                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="centerX" secondItem="E6J-id-DVJ" secondAttribute="centerX" id="fXW-Cz-81n"/>
+                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="top" secondItem="Opi-BJ-PMQ" secondAttribute="bottom" constant="16" id="eoe-jd-XJM"/>
                             <constraint firstAttribute="bottom" secondItem="bAB-vM-Ryo" secondAttribute="bottom" constant="46" id="hpe-yO-nuZ"/>
-                            <constraint firstItem="DMa-xI-MOu" firstAttribute="top" secondItem="bAB-vM-Ryo" secondAttribute="top" id="inz-Hd-c7F"/>
-                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="trailing" secondItem="yic-yC-a5T" secondAttribute="trailingMargin" id="tWb-Lf-KIs"/>
+                            <constraint firstItem="DMa-xI-MOu" firstAttribute="top" secondItem="bAB-vM-Ryo" secondAttribute="top" constant="-16" id="inz-Hd-c7F"/>
+                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="centerX" secondItem="E6J-id-DVJ" secondAttribute="centerX" id="sgP-6N-WdO"/>
+                            <constraint firstItem="bAB-vM-Ryo" firstAttribute="leading" secondItem="yic-yC-a5T" secondAttribute="leadingMargin" id="vZD-2C-Kug"/>
                         </constraints>
                     </view>
                     <connections>
@@ -168,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzR-ET-sFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2198" y="0.0"/>
+            <point key="canvasLocation" x="2197.5999999999999" y="-0.44977511244377816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

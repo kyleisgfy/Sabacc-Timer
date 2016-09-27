@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B1192A881D8D1F140056B186 /* ShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1192A871D8D1F140056B186 /* ShiftView.swift */; };
-		B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B12B47221D888F8F003855CD /* SabaccIcon2.png */; };
 		B149956A1D827B5500ADD3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995691D827B5500ADD3D2 /* AppDelegate.swift */; };
 		B149956C1D827B5500ADD3D2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956B1D827B5500ADD3D2 /* FirstViewController.swift */; };
 		B149956E1D827B5500ADD3D2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149956D1D827B5500ADD3D2 /* SecondViewController.swift */; };
@@ -18,7 +17,6 @@
 		B149958C1D827B5500ADD3D2 /* Sabacc_NewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149958B1D827B5500ADD3D2 /* Sabacc_NewUITests.swift */; };
 		B149959C1D83ACFF00ADD3D2 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149959B1D83ACFF00ADD3D2 /* PlayerManager.swift */; };
 		B149959E1D83FEF100ADD3D2 /* Sabacc rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */; };
-		B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B14995A91D8630DA00ADD3D2 /* Players Icon1.png */; };
 		B14995AE1D8642B500ADD3D2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */; };
 		B1CD42C81D99C3A800EC4963 /* cantinaSong in Resources */ = {isa = PBXBuildFile; fileRef = B1CD42C71D99C3A800EC4963 /* cantinaSong */; };
 		B1CD42CA1D9A0D4C00EC4963 /* computerAudio.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1CD42C91D9A0D4C00EC4963 /* computerAudio.wav */; };
@@ -35,6 +33,7 @@
 		B1F849411D8FD0B70000E54E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849371D8FD0B70000E54E /* 3.png */; };
 		B1F849421D8FD0B70000E54E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849381D8FD0B70000E54E /* 2.png */; };
 		B1F849431D8FD0B70000E54E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F849391D8FD0B70000E54E /* 1.png */; };
+		B1FC036B1D9A23A100BA275A /* CardBack-01.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FC036A1D9A23A100BA275A /* CardBack-01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		B1192A871D8D1F140056B186 /* ShiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftView.swift; sourceTree = "<group>"; };
-		B12B47221D888F8F003855CD /* SabaccIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SabaccIcon2.png; sourceTree = "<group>"; };
 		B14995661D827B5500ADD3D2 /* Sabacc New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sabacc New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14995691D827B5500ADD3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B149956B1D827B5500ADD3D2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 		B149958D1D827B5500ADD3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B149959B1D83ACFF00ADD3D2 /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabacc rotate.png"; sourceTree = "<group>"; };
-		B14995A91D8630DA00ADD3D2 /* Players Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players Icon1.png"; sourceTree = "<group>"; };
 		B14995AD1D8642B500ADD3D2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 		B1CD42C71D99C3A800EC4963 /* cantinaSong */ = {isa = PBXFileReference; lastKnownFileType = file; path = cantinaSong; sourceTree = "<group>"; };
 		B1CD42C91D9A0D4C00EC4963 /* computerAudio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = computerAudio.wav; sourceTree = "<group>"; };
@@ -89,6 +86,7 @@
 		B1F849371D8FD0B70000E54E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		B1F849381D8FD0B70000E54E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		B1F849391D8FD0B70000E54E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B1FC036A1D9A23A100BA275A /* CardBack-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CardBack-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,13 +147,12 @@
 				B14995721D827B5500ADD3D2 /* Assets.xcassets */,
 				B14995741D827B5500ADD3D2 /* LaunchScreen.storyboard */,
 				B14995771D827B5500ADD3D2 /* Info.plist */,
-				B14995A91D8630DA00ADD3D2 /* Players Icon1.png */,
-				B12B47221D888F8F003855CD /* SabaccIcon2.png */,
 				B149959D1D83FEF100ADD3D2 /* Sabacc rotate.png */,
 				B1D09DDB1D98F9CC00EA044D /* SabaccBackground.png */,
 				B1CD42C91D9A0D4C00EC4963 /* computerAudio.wav */,
 				B1CD42C71D99C3A800EC4963 /* cantinaSong */,
 				B1D09DDD1D99B4FD00EA044D /* sirenNoise.wav */,
+				B1FC036A1D9A23A100BA275A /* CardBack-01.png */,
 				B1F849301D8FD0B70000E54E /* 6.png */,
 				B1F849311D8FD0B70000E54E /* 7.png */,
 				B1F849321D8FD0B70000E54E /* 8.png */,
@@ -297,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FC036B1D9A23A100BA275A /* CardBack-01.png in Resources */,
 				B1F849421D8FD0B70000E54E /* 2.png in Resources */,
 				B1F8493A1D8FD0B70000E54E /* 6.png in Resources */,
 				B14995761D827B5500ADD3D2 /* LaunchScreen.storyboard in Resources */,
@@ -305,13 +303,11 @@
 				B1F8493E1D8FD0B70000E54E /* 0.png in Resources */,
 				B1F8493D1D8FD0B70000E54E /* 9.png in Resources */,
 				B14995731D827B5500ADD3D2 /* Assets.xcassets in Resources */,
-				B12B47231D888F8F003855CD /* SabaccIcon2.png in Resources */,
 				B1F8493C1D8FD0B70000E54E /* 8.png in Resources */,
 				B1D09DDC1D98F9CC00EA044D /* SabaccBackground.png in Resources */,
 				B1F8493F1D8FD0B70000E54E /* 5.png in Resources */,
 				B1CD42CA1D9A0D4C00EC4963 /* computerAudio.wav in Resources */,
 				B1F849401D8FD0B70000E54E /* 4.png in Resources */,
-				B14995AA1D8630DA00ADD3D2 /* Players Icon1.png in Resources */,
 				B1F849411D8FD0B70000E54E /* 3.png in Resources */,
 				B1CD42C81D99C3A800EC4963 /* cantinaSong in Resources */,
 				B1F8493B1D8FD0B70000E54E /* 7.png in Resources */,

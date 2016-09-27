@@ -11,7 +11,7 @@ import AVFoundation
 
 var isAnimating = false
 var imageList: Array<AnyObject> = []
-var durationList: Array<Int> = []
+var durationList: Array<Int> = [1, 2, 3, 4, 5]
 
 class SecondViewController:
         UIViewController
@@ -60,7 +60,7 @@ class SecondViewController:
         print("Timer has been called.")
         computerSound ()
         randomTimeIntervalGenerator()
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(randomTimeInterval), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(5/*randomTimeInterval*/), target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
         
     }
     
@@ -109,7 +109,9 @@ class SecondViewController:
     }
     
     func assignAnimationDuration () {
-        
+        for index in 0...(durationList.count - 1) {
+            durationList[index] = Int(arc4random_uniform(10)+1)
+        }
     }
     
     
@@ -117,19 +119,19 @@ class SecondViewController:
         isAnimating = true
 
         countDownOne.animationImages = imageList as? [UIImage]
-        countDownOne.animationDuration = 3
+        countDownOne.animationDuration = TimeInterval(durationList[0])
         countDownOne.startAnimating()
         countDownTwo.animationImages = imageList as? [UIImage]
-        countDownTwo.animationDuration = 4
+        countDownTwo.animationDuration = TimeInterval(durationList[1])
         countDownTwo.startAnimating()
         countDownThree.animationImages = imageList as? [UIImage]
-        countDownThree.animationDuration = 1
+        countDownThree.animationDuration = TimeInterval(durationList[2])
         countDownThree.startAnimating()
         countDownFour.animationImages = imageList as? [UIImage]
-        countDownFour.animationDuration = 5
+        countDownFour.animationDuration = TimeInterval(durationList[3])
         countDownFour.startAnimating()
         countDownFive.animationImages = imageList as? [UIImage]
-        countDownFive.animationDuration = 2
+        countDownFive.animationDuration = TimeInterval(durationList[4])
         countDownFive.startAnimating()
         print("Animation has started")
     }
@@ -159,9 +161,9 @@ class SecondViewController:
 // View Will Appear
     override func viewWillAppear(_ animated: Bool) {
         print("View 2 Will Appear")
-        //stopAnimation ()
         if timer.isValid != true {
             print("Timer is not running, start timer.")
+            assignAnimationDuration()
             startAnimation()
             sabaccTimer()
             print("timer started")
